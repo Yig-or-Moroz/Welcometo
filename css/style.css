@@ -11,8 +11,9 @@
 
 body {
 	font-family: 'IM FELL DW Pica', Arial, Helvetica, sans-serif;
-	min-width: 768px;
-	background: #82997f url(../image/background.jpg) 0 0/cover no-repeat;
+	min-width: 1196px;
+	max-height: 768px;
+	background: #82997f url(../image/background2.jpg) 0 0/cover no-repeat;
 }
 
 .wrapper {
@@ -20,13 +21,14 @@ body {
 }
 
 .conteiner {
-	width: 630px;
-	margin: 35px auto;
+	width: 1166px;
+	margin: 30px auto 0px;
 }
 
 .header {
 	display: flex;
 	justify-content: right;
+	margin-bottom: 20px;
 }
 
 .play:active,
@@ -48,24 +50,24 @@ body {
 
 .main {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
 }
 
 .building-plans {
-	width: 94px;
-	height: 467px;
-	margin: 80px 0px 10px 10px;
+	width: 552px;
+	margin-bottom: 40px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 	cursor: pointer;
 }
 
 .plans {
-	width: 94px;
-	height: 145px;
+	width: 157px;
+	height: 237px;
 
-	border-radius: 10px;
+	border-radius: 15px;
 	filter: drop-shadow(5px 5px 2px rgb(0, 0, 0, .30));
 	transition: all 0.3s ease-in;
 }
@@ -79,7 +81,7 @@ body {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	border-radius: 10px;
+	border-radius: 15px;
 	backface-visibility: hidden;
 	transition: transform 1.5s ease;
 }
@@ -92,33 +94,34 @@ body {
 	transform: perspective(600px) rotateY(180deg);
 }
 
-.house-numbers, .effects {
-	width: 105px;
-	height: 551px;
-	margin: 36px 0px 0px;
+.numbers-n-effects {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
+	margin-bottom: 20px;
 }
 
-.house-numbers {
-	margin-left: 80px;
+.left__numbers-n-effects,
+.center__numbers-n-effects,
+.right__numbers-n-effects {
+	display: flex;
+	margin-right: 30px;
 }
 
-.effects {
-	margin-right: 80px;
+.right__numbers-n-effects {
+	margin-right: -10px;
 }
 
 .numbers, .effect {
-	width: 105px;
-	height: 160px;
-	border-radius: 10px;
+	width: 162px;
+	height: 250px;
+	margin-right: 10px;
+	border-radius: 15px;
 	filter: drop-shadow(5px 5px 2px rgb(0, 0, 0, .30));
 }
 
 .next-button img {
-	width: 90px;
-	margin: 270px 20px 270px 0px;
+	width: 58px;
 	filter: drop-shadow(5px 5px 2px rgb(0, 0, 0, .30));
 	cursor: pointer;
 }

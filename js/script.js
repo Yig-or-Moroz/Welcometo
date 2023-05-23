@@ -170,10 +170,3 @@ buildingPlans.addEventListener('click', event => {
 })
 
 
-let winH = document.documentElement.clientHeight;
-let winW = document.documentElement.clientWidth;
-
-console.log(winH);
-console.log(winW);
-
-
